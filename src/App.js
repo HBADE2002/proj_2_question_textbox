@@ -1,11 +1,12 @@
 import './App.css';
 import Question from './Question';
 
-const questions = [
+const questions = [ // Array of objects
   {
     id: 1,
     title: 'What is Your Name?',
     info: 'Your name is Hrishikesh Bade'
+
   },
   {
     id: 2,
@@ -22,12 +23,12 @@ const questions = [
 function App() {
   return (
     <div className="App">
-      <h1>Project 2: FAQ/Accordion</h1>
-      <div className="container">
-        <h2>React Questions and Answers</h2>
-        <div className="questions">
+      <h1>Project 2: FAQ/Accordion</h1> 
+      <div className="container"> 
+        <h2>React Questions and Answers</h2> 
+        <div className="questions"> 
           {questions.map((question) => (
-            <Question key={question.id} question={question}></Question>
+            <Question key={question.id} question={question}></Question> // Passing the question object to the Question component
           )) }
         </div>
       </div>

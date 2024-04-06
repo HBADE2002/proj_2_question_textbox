@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function Question({ question }) {
+function Question({question}) {
     const [isOpen, setOpen] = useState(false);
     return (
         <section>
@@ -14,5 +14,4 @@ function Question({ question }) {
     
   )
 }
-
 export default Question
