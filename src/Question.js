@@ -11,7 +11,12 @@ function Question({question}) {
             <div className={isOpen?"open":"closed"}>
                 <h4>{question.title}</h4>
                 <button onClick={() => {setOpen(!isOpen); toggleImage()}}>{isOpen ? "-" : "+"}</button>
-                {showImage && <img src={question.image} alt="" className="question-img"/>}
+                {showImage && (
+          <div>
+            <br /> {/* Line break to move the image to a new line */}
+            <img src={question.image} alt="" className="question-img" />
+          </div>
+        )}
             </div>
             {isOpen && <p>{question.info}</p>}
         </section>

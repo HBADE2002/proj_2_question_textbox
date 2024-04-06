@@ -6,7 +6,7 @@ const questions = [ // Array of objects
     id: 1,
     title: 'What is Your Name?',
     info: 'Your name is Hrishikesh Bade',
-    image: 'https://images.pexels.com/photos/20753710/pexels-photo-20753710/free-photo-of-sunrise-in-berlin-on-film.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/3839694/pexels-photo-3839694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
   },
   {
