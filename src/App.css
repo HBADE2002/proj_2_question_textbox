@@ -46,3 +46,11 @@ section p {
 section > div.closed {
   margin-bottom: 20px;
 }
+
+.question-img {
+  max-width: 80%; /* Adjust the percentage to make the image smaller */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* Center the image horizontally with top and bottom margin */
+  border-radius: 5px; /* Optional: adds a rounded border to the image */
+}

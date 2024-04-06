@@ -5,22 +5,25 @@ const questions = [ // Array of objects
   {
     id: 1,
     title: 'What is Your Name?',
-    info: 'Your name is Hrishikesh Bade'
+    info: 'Your name is Hrishikesh Bade',
+    image: 'https://images.pexels.com/photos/20753710/pexels-photo-20753710/free-photo-of-sunrise-in-berlin-on-film.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
   },
   {
     id: 2,
     title: 'When is your birthday?',
-    info: 'Your birthday is on 20 July 2002 '
+    info: 'Your birthday is on 20 July 2002 ',
+    image: 'https://images.pexels.com/photos/20723439/pexels-photo-20723439/free-photo-of-a-group-of-rams-laying-in-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   },
   {
     id: 3,
     title: 'What is your Dream?',
-    info: 'Your dream is to be a successful software engineer'
+    info: 'Your dream is to be a successful software engineer',
+    image:'https://images.pexels.com/photos/5221588/pexels-photo-5221588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   }
 ]
 
-function App() {
+function App() { // App component is the parent component of Question component
   return (
     <div className="App">
       <h1>Project 2: FAQ/Accordion</h1> 
@@ -28,7 +31,7 @@ function App() {
         <h2>React Questions and Answers</h2> 
         <div className="questions"> 
           {questions.map((question) => (
-            <Question key={question.id} question={question}></Question> // Passing the question object to the Question component
+            <Question key={question.id} question={question} image={question.image}></Question> // Passing the question object to the Question component
           )) }
         </div>
       </div>
